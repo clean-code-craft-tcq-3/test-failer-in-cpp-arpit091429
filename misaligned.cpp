@@ -6,7 +6,7 @@ void checkPairNumberValidity(int pair_number)
     assert(pair_no >= 1 && pair_no <= 25);
 }
 
-void printColorMap()
+int printColorMap()
 {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
@@ -21,6 +21,7 @@ void printColorMap()
             checkPairNumberValidity(pair_number);
         }
     }
+    return i*j;
 }
 
 int main()
