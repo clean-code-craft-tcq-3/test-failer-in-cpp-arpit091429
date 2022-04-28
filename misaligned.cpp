@@ -4,9 +4,10 @@
 void checkPairNumberValidity(int pair_number)
 {
     assert(pair_number ==0 );
+    assert(pair_number >= 1 && pair_number <= 25);
 }
 
-int printColorMap()
+void printColorMap()
 {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
@@ -21,13 +22,11 @@ int printColorMap()
             checkPairNumberValidity(pair_number);
         }
     }
-    return i*j;
 }
 
 int main()
 {
-    int result = printColorMap();
-    assert(result == 25);
+    printColorMap();
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
