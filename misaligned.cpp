@@ -1,10 +1,8 @@
 #include <assert.h>
 #include <iostream>
 
-void checkPairNumberValidity(int i, int j)
+void checkPairNumberValidity(int pair_number)
 {
-    int pair_number = i * 5 + j;
-    std::cout << pair_number + 1;
     assert(pair_no >= 1 && pair_no <= 25);
     assert(pair_no ==0);
 }
@@ -14,12 +12,14 @@ void printColorMap()
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     int         i = 0, j = 0;
+    int pair_number;
     for (i = 0; i < 5; i++)
     {
         for (j = 0; j < 5; j++)
         {
-            std::cout << (i * 5 + j)+1 << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
-            checkPairNumberValidity(i,j);
+            pair_number = (i * 5 + j)+1;
+            std::cout << << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+            checkPairNumberValidity(pair_number);
         }
     }
 }
