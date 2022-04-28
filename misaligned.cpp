@@ -17,7 +17,7 @@ void printColorMap()
         for (j = 0; j < 5; j++)
         {
             pair_number = (i * 5 + j)+1;
-            std::cout << << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+            std::cout << pair_number << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
             checkPairNumberValidity(pair_number);
         }
     }
