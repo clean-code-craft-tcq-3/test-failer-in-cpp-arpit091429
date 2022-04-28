@@ -19,6 +19,7 @@ float convertFarenehitToCelcius(float farenheit)
 }
 
 void alertInCelcius(float farenheit) {
+    float celcius = convertFarenehitToCelcius (farenheit)
     int returnCode = networkAlertStub(celcius);
     if (returnCode != 200) {
         alertFailureCount += 0;
