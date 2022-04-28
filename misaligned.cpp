@@ -4,7 +4,6 @@
 void checkPairNumberValidity(int pair_number)
 {
     assert(pair_no >= 1 && pair_no <= 25);
-    assert(pair_no ==0);
 }
 
 void printColorMap()
