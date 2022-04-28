@@ -6,6 +6,7 @@ void checkPairNumberValidity(int i, int j)
     int pair_number = i * 5 + j;
     std::cout << pair_number + 1;
     assert(pair_no >= 1 && pair_no <= 25);
+     assert(pair_no ==0);
 }
 
 void printColorMap()
