@@ -6,7 +6,7 @@ void checkPairNumberValidity(int i, int j)
     int pair_number = i * 5 + j;
     std::cout << pair_number + 1;
     assert(pair_no >= 1 && pair_no <= 25);
-     assert(pair_no ==0);
+    assert(pair_no ==0);
 }
 
 void printColorMap()
@@ -18,7 +18,7 @@ void printColorMap()
     {
         for (j = 0; j < 5; j++)
         {
-            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+            std::cout << (i * 5 + j)+1 << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
             checkPairNumberValidity(i,j);
         }
     }
