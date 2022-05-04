@@ -22,7 +22,7 @@ void testTshirtsSize()
     assert(size(42) == 'M');
 }
 int main() {
-
+    testTshirtsSize();
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
