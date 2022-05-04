@@ -13,12 +13,16 @@ char size(int cms) {
     return sizeName;
 }
 
-int main() {
+void testTshirtsSize()
+{
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
     assert(size(38) == 'S');
     assert(size(42) == 'M');
+}
+int main() {
+
     std::cout << "All is well (maybe!)\n";
     return 0;
 }
