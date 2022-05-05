@@ -18,8 +18,8 @@ enum MinorColor
     SLATE
 };
 
-const char* MajorColorNames[];
-const char* MinorColorNames[];
+extern const char* MajorColorNames[];
+extern const char* MinorColorNames[];
 
 class ColorPair
 {
