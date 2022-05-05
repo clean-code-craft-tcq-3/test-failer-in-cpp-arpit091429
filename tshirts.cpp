@@ -1,5 +1,5 @@
 #include <iostream>
-#include <assert.h>
+#include "TestTshirtSize.h"
 
 char size(int cms) {
     char sizeName = '\0';
@@ -11,15 +11,6 @@ char size(int cms) {
         sizeName = 'L';
     }
     return sizeName;
-}
-
-void testTshirtsSize()
-{
-    assert(size(37) == 'S');
-    assert(size(40) == 'M');
-    assert(size(43) == 'L');
-    assert(size(38) == 'S');
-    assert(size(42) == 'M');
 }
 
 int main() {
